@@ -1,0 +1,21 @@
+$brand-primary: #396D5B;
+
+// Navbar
+$navbar-default-bg: #fff;
+$navbar-height: 65px;
+$navbar-default-link-hover-color: $brand-primary;
+$navbar-default-link-active-color: $brand-primary;
+
+
+// Breadcrumb
+$breadcrumb-separator: ">";
+$breadcrumb-bg: #fff;
+$breadcrumb-padding-horizontal: 5px;
+
+
+// bootstrap components
+@import "bootstrap";
+
+// custom components
+@import "custom/navbar";
+@import "custom/footer";
