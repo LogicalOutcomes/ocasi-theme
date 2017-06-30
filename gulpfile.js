@@ -14,10 +14,17 @@ var env        = require('minimist')(process.argv.slice(2)),
 	modRewrite = require('connect-modrewrite'),
 	imagemin   = require('gulp-imagemin');
 
-// Calect template
+// Collect template
 gulp.task('template', function(){
 	return gulp.src('src/templates/*.html')
 		.pipe(gulp.dest('build/'))
+		.pipe(connect.reload());
+});
+
+// Collect fonts
+gulp.task('fonts', function(){
+	return gulp.src('src/fonts/**/*')
+		.pipe(gulp.dest('build/fonts/'))
 		.pipe(connect.reload());
 });
 
@@ -86,4 +93,4 @@ gulp.task('connect', function() {
 });
 
 // Default task
-gulp.task('default', ['js', 'template', 'compass', 'imagemin', 'watch', 'connect']);
+gulp.task('default', ['js', 'template', 'fonts', 'compass', 'imagemin', 'watch', 'connect']);

@@ -1,0 +1,11 @@
+.section-box {
+	&_icon {
+		height: 48px;
+		float: left;
+	    margin-top: -5px;
+	}
+
+	&_content {
+		margin-left: 48+15px;
+	}
+}

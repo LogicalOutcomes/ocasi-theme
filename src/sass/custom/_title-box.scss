@@ -1,0 +1,13 @@
+.title-box {
+	padding: 15px 0;
+
+	&_icon {
+		float: left;
+		margin-right: 15px;
+	}
+
+	&_title {
+		color: $brand-primary;
+		margin-top: 15px;
+	}
+}

@@ -1,0 +1,17 @@
+.shortcut-box {
+    margin: 30px 0;
+
+    &_icon {
+        height: 32px;
+        float: left;
+        margin-top: 3px;
+    }
+
+    &_content {
+        margin-left: 32+15px;
+        &_title {
+            font-size: 16px;
+        }
+    }
+
+}

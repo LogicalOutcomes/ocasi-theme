@@ -1,4 +1,8 @@
 @charset "UTF-8";
+@font-face {
+  font-family: 'Avenir Next Regular';
+  src: url("../../fonts/avenir-next-regular.ttf") format("truetype");
+}
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.
@@ -1717,10 +1721,10 @@ html {
 
 /* line 27, ../sass/bootstrap/_scaffolding.scss */
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Avenir Next Regular";
   font-size: 14px;
   line-height: 1.42857;
-  color: #333333;
+  color: #767171;
   background-color: #fff;
 }
 
@@ -1736,12 +1740,12 @@ textarea {
 
 /* line 48, ../sass/bootstrap/_scaffolding.scss */
 a {
-  color: #396D5B;
+  color: #0070C0;
   text-decoration: none;
 }
 /* line 52, ../sass/bootstrap/_scaffolding.scss */
 a:hover, a:focus {
-  color: #1f3b31;
+  color: #004374;
   text-decoration: underline;
 }
 /* line 58, ../sass/bootstrap/_scaffolding.scss */
@@ -1833,7 +1837,7 @@ h1, h2, h3, h4, h5, h6,
   font-family: inherit;
   font-weight: 500;
   line-height: 1.1;
-  color: inherit;
+  color: #000000;
 }
 /* line 16, ../sass/bootstrap/_type.scss */
 h1 small,
@@ -4293,7 +4297,7 @@ select[multiple].input-lg,
   display: block;
   margin-top: 5px;
   margin-bottom: 10px;
-  color: #737373;
+  color: #b5b2b2;
 }
 
 @media (min-width: 768px) {
@@ -4737,7 +4741,7 @@ a.btn.disabled, fieldset[disabled] a.btn {
 
 /* line 96, ../sass/bootstrap/_buttons.scss */
 .btn-link {
-  color: #396D5B;
+  color: #0070C0;
   font-weight: normal;
   border-radius: 0;
 }
@@ -4753,7 +4757,7 @@ a.btn.disabled, fieldset[disabled] a.btn {
 }
 /* line 115, ../sass/bootstrap/_buttons.scss */
 .btn-link:hover, .btn-link:focus {
-  color: #1f3b31;
+  color: #004374;
   text-decoration: underline;
   background-color: transparent;
 }
@@ -5457,7 +5461,7 @@ tbody.collapse.in {
 /* line 46, ../sass/bootstrap/_navs.scss */
 .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
   background-color: #eeeeee;
-  border-color: #396D5B;
+  border-color: #0070C0;
 }
 /* line 59, ../sass/bootstrap/_navs.scss */
 .nav .nav-divider {
@@ -6051,7 +6055,7 @@ tbody.collapse.in {
 }
 /* line 410, ../sass/bootstrap/_navbar.scss */
 .navbar-default .navbar-text {
-  color: #777;
+  color: #595959;
 }
 /* line 415, ../sass/bootstrap/_navbar.scss */
 .navbar-default .navbar-nav > li > a {
@@ -6287,7 +6291,7 @@ tbody.collapse.in {
   padding: 6px 12px;
   line-height: 1.42857;
   text-decoration: none;
-  color: #396D5B;
+  color: #0070C0;
   background-color: #fff;
   border: 1px solid #ddd;
   margin-left: -1px;
@@ -6310,7 +6314,7 @@ tbody.collapse.in {
 .pagination > li > span:hover,
 .pagination > li > span:focus {
   z-index: 2;
-  color: #1f3b31;
+  color: #004374;
   background-color: #eeeeee;
   border-color: #ddd;
 }
@@ -6548,7 +6552,7 @@ a.label:hover, a.label:focus {
 }
 /* line 41, ../sass/bootstrap/_badges.scss */
 .list-group-item.active > .badge, .nav-pills > .active > a > .badge {
-  color: #396D5B;
+  color: #0070C0;
   background-color: #fff;
 }
 /* line 47, ../sass/bootstrap/_badges.scss */
@@ -6647,14 +6651,14 @@ a.badge:hover, a.badge:focus {
 /* line 27, ../sass/bootstrap/_thumbnails.scss */
 .thumbnail .caption {
   padding: 9px;
-  color: #333333;
+  color: #767171;
 }
 
 /* line 34, ../sass/bootstrap/_thumbnails.scss */
 a.thumbnail:hover,
 a.thumbnail:focus,
 a.thumbnail.active {
-  border-color: #396D5B;
+  border-color: #0070C0;
 }
 
 /* line 9, ../sass/bootstrap/_alerts.scss */
@@ -7877,7 +7881,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Avenir Next Regular";
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -8015,7 +8019,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Avenir Next Regular";
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -8826,16 +8830,94 @@ button.close {
   text-decoration: none;
 }
 /* line 25, ../sass/custom/_footer.scss */
+.footer_center {
+  text-align: center;
+}
+/* line 27, ../sass/custom/_footer.scss */
+.footer_center_label {
+  margin: 0;
+}
+/* line 30, ../sass/custom/_footer.scss */
+.footer_center img {
+  height: 85px;
+  margin-bottom: 10px;
+}
+/* line 36, ../sass/custom/_footer.scss */
 .footer ul {
   list-style: none;
   padding-left: 0;
 }
-/* line 29, ../sass/custom/_footer.scss */
+/* line 40, ../sass/custom/_footer.scss */
 .footer ul li {
   padding-top: 5px;
 }
-/* line 34, ../sass/custom/_footer.scss */
+/* line 45, ../sass/custom/_footer.scss */
 .footer .credits {
   margin-top: 15px;
   text-align: center;
+}
+/* line 50, ../sass/custom/_footer.scss */
+.footer .underline {
+  text-decoration: underline;
+}
+
+/* line 1, ../sass/custom/_general.scss */
+.section-title {
+  font-size: 42px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+/* line 8, ../sass/custom/_general.scss */
+.subsection-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+/* line 1, ../sass/custom/_title-box.scss */
+.title-box {
+  padding: 15px 0;
+}
+/* line 4, ../sass/custom/_title-box.scss */
+.title-box_icon {
+  float: left;
+  margin-right: 15px;
+}
+/* line 9, ../sass/custom/_title-box.scss */
+.title-box_title {
+  color: #396D5B;
+  margin-top: 15px;
+}
+
+/* line 2, ../sass/custom/_section-box.scss */
+.section-box_icon {
+  height: 48px;
+  float: left;
+  margin-top: -5px;
+}
+/* line 8, ../sass/custom/_section-box.scss */
+.section-box_content {
+  margin-left: 63px;
+}
+
+/* line 1, ../sass/custom/_shortcut-box.scss */
+.shortcut-box {
+  margin: 30px 0;
+}
+/* line 4, ../sass/custom/_shortcut-box.scss */
+.shortcut-box_icon {
+  height: 32px;
+  float: left;
+  margin-top: 3px;
+}
+/* line 10, ../sass/custom/_shortcut-box.scss */
+.shortcut-box_content {
+  margin-left: 47px;
+}
+/* line 12, ../sass/custom/_shortcut-box.scss */
+.shortcut-box_content_title {
+  font-size: 16px;
 }
