@@ -8877,6 +8877,37 @@ button.close {
   margin-top: 30px;
 }
 
+/* line 1, ../sass/custom/_main-title-box.scss */
+.main-title-box {
+  margin: 0 0 30px 0;
+  text-align: center;
+}
+
+/* line 1, ../sass/custom/_main-section-box.scss */
+.main-section-box {
+  border-top: 5px solid #F15B2A;
+  margin: 15px;
+  padding: 0 20px;
+}
+/* line 6, ../sass/custom/_main-section-box.scss */
+.main-section-box_icon {
+  height: 48px;
+  float: left;
+  margin-top: 22px;
+}
+/* line 12, ../sass/custom/_main-section-box.scss */
+.main-section-box_titles {
+  margin: 0 0 20px 63px;
+}
+/* line 14, ../sass/custom/_main-section-box.scss */
+.main-section-box_titles_title {
+  margin-bottom: 2px;
+}
+/* line 19, ../sass/custom/_main-section-box.scss */
+.main-section-box_link {
+  margin: 30px 0;
+}
+
 /* line 1, ../sass/custom/_title-box.scss */
 .title-box {
   padding: 15px 0;

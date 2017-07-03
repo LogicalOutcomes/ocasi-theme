@@ -4,10 +4,6 @@
   "description": "A simple boilerplate to create projects with jade, bootstrap-sass and gulp.",
   "main": "gulpfile.js",
   "dependencies": {
-    "gulp-concat": "~2.2.0",
-    "gulp-if": "~1.0.0",
-    "gulp-jade": "~0.5.0",
-    "gulp-uglify": "~0.2.1"
   },
   "devDependencies": {
     "connect-modrewrite": "^0.7.4",
@@ -18,7 +14,7 @@
     "gulp-cssmin": "^0.1.6",
     "gulp-if": "^1.0.0",
     "gulp-imagemin": "^0.5.0",
-    "gulp-jade": "^0.5.0",
+    "gulp-nunjucks-render": "^2.2.1",
     "gulp-uglify": "^0.2.1",
     "imagemin-gifsicle": "^5.1.0",
     "imagemin-optipng": "^5.2.1",

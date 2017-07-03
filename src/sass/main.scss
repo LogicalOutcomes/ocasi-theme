@@ -5,6 +5,7 @@ $link-color: #0070C0;
 $headings-color: #000000;
 $text-color: #767171;
 $menu-color: #595959;
+$section-heading-color: #F15B2A;
 
 
 
@@ -34,6 +35,8 @@ $breadcrumb-padding-horizontal: 5px;
 @import "custom/navbar";
 @import "custom/footer";
 @import "custom/general";
+@import "custom/main-title-box";
+@import "custom/main-section-box";
 @import "custom/title-box";
 @import "custom/section-box";
 @import "custom/shortcut-box";

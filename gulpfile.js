@@ -2,24 +2,17 @@
 // For production  => gulp -p
 
 // Call Plugins
-var env        = require('minimist')(process.argv.slice(2)),
-    gulp       = require('gulp'),
-    jade       = require('gulp-jade'),
-    uglify     = require('gulp-uglify'),
-    compass    = require('gulp-compass'),
-    concat     = require('gulp-concat'),
-    cssmin     = require('gulp-cssmin'),
-    gulpif     = require('gulp-if'),
-    connect    = require('gulp-connect'),
-    modRewrite = require('connect-modrewrite'),
-    imagemin   = require('gulp-imagemin');
-
-// Collect template
-gulp.task('template', function(){
-    return gulp.src('src/templates/*.html')
-        .pipe(gulp.dest('docs/'))
-        .pipe(connect.reload());
-});
+var env            = require('minimist')(process.argv.slice(2)),
+    gulp           = require('gulp'),
+    uglify         = require('gulp-uglify'),
+    compass        = require('gulp-compass'),
+    concat         = require('gulp-concat'),
+    cssmin         = require('gulp-cssmin'),
+    gulpif         = require('gulp-if'),
+    connect        = require('gulp-connect'),
+    modRewrite     = require('connect-modrewrite'),
+    imagemin       = require('gulp-imagemin');
+    nunjucksRender = require('gulp-nunjucks-render');
 
 // Collect fonts
 gulp.task('fonts', function(){
@@ -28,12 +21,16 @@ gulp.task('fonts', function(){
         .pipe(connect.reload());
 });
 
-// Call Jade for compile Templates
-gulp.task('jade', function(){
-    return gulp.src('src/templates/*.jade')
-        .pipe(jade({pretty: !env.p }))
-        .pipe(gulp.dest('docs/'))
-        .pipe(connect.reload());
+// Call nunjucks for templates
+gulp.task('nunjucks', function() {
+  // Gets .html and .nunjucks files in pages
+  return gulp.src('src/templates/pages/**/*.+(html|nunjucks)')
+  // Renders template with nunjucks
+  .pipe(nunjucksRender({
+      path: ['src/templates']
+    }))
+  // output files in app folder
+  .pipe(gulp.dest('docs/'))
 });
 
 // Call Uglify and Concat JS
@@ -69,8 +66,7 @@ gulp.task('imagemin', function() {
 
 // Call Watch
 gulp.task('watch', function(){
-    gulp.watch('src/templates/**/*.html', ['template']);
-    // gulp.watch('src/templates/**/*.jade', ['jade']);
+    gulp.watch('src/templates/**/*.{html,nunjucks}', ['nunjucks']);
     gulp.watch('src/sass/**/*.scss', ['compass']);
     gulp.watch('src/js/**/*.js', ['js']);
     gulp.watch('src/img/**/*.{jpg,png,gif}', ['imagemin']);
@@ -93,4 +89,4 @@ gulp.task('connect', function() {
 });
 
 // Default task
-gulp.task('default', ['js', 'template', 'fonts', 'compass', 'imagemin', 'watch', 'connect']);
+gulp.task('default', ['js', 'nunjucks', 'fonts', 'compass', 'imagemin', 'watch', 'connect']);

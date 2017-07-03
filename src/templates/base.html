@@ -38,9 +38,19 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+                        <li class="{% block nav_home_class %}{% endblock %}">
+                            <a href="/">
+                                Home
+                                {% block nav_home_sr_class %}{% endblock %}
+                            </a>
+                        </li>
                         <li><a href="#">Data Portal</a></li>
-                        <li><a href="#">Evaluation</a></li>
+                        <li class="{% block nav_evaluation_class %}{% endblock %}">
+                            <a href="/evaluation">
+                                Evaluation
+                                {% block nav_evaluation_sr_class %}{% endblock %}
+                            </a>
+                        </li>
                         <li><a href="#">Registry</a></li>
                         <li><a href="#">Help</a></li>
                     </ul>
@@ -56,39 +66,7 @@
 
 
         <div class="container">
-
-            <ol class="breadcrumb">
-              <li><a href="/">Home</a></li>
-              <li class="active">OCASI</li>
-            </ol>
-
-
-            <div class="row">
-                <div class="col-md-12">
-                    <h1 class="text-center">Credits</h1>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-md-12">
-
-					<hr>
-
-					<div>Icons made by <a href="http://www.flaticon.com/authors/vectors-market" title="Vectors Market">Vectors Market</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
-
-					<hr>
-
-					<p>
-						<a href="http://aristotlemetadata.com">Aristotle Metadata Registry</a>
-					</p>
-
-					<hr>
-
-				</div>
-
-            </div>
-
-
+            {% block content %}{% endblock %}
         </div>
 
 
@@ -139,7 +117,7 @@
                                 <a href="#">Accessibility</a>
                             </li>
                             <li>
-                                Powered by <a href="#" class="underline">open source</a>
+                                Powered by <a href="/credits.html" class="underline">open source</a>
                             </li>
                         </ul>
                     </div>
@@ -161,8 +139,3 @@
         <script src="js/main.js"></script>
     </body>
 </html>
-
-
-
-
-
