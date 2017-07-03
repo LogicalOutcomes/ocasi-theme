@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @font-face {
   font-family: 'Avenir Next Regular';
-  src: url("../../fonts/avenir-next-regular.ttf") format("truetype");
+  src: url("../fonts/avenir-next-regular.ttf") format("truetype");
 }
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
