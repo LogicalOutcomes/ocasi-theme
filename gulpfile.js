@@ -17,14 +17,14 @@ var env        = require('minimist')(process.argv.slice(2)),
 // Collect template
 gulp.task('template', function(){
     return gulp.src('src/templates/*.html')
-        .pipe(gulp.dest('build/'))
+        .pipe(gulp.dest('docs/'))
         .pipe(connect.reload());
 });
 
 // Collect fonts
 gulp.task('fonts', function(){
     return gulp.src('src/fonts/**/*')
-        .pipe(gulp.dest('build/fonts/'))
+        .pipe(gulp.dest('docs/fonts/'))
         .pipe(connect.reload());
 });
 
@@ -32,7 +32,7 @@ gulp.task('fonts', function(){
 gulp.task('jade', function(){
     return gulp.src('src/templates/*.jade')
         .pipe(jade({pretty: !env.p }))
-        .pipe(gulp.dest('build/'))
+        .pipe(gulp.dest('docs/'))
         .pipe(connect.reload());
 });
 
@@ -41,7 +41,7 @@ gulp.task('js', function(){
     return gulp.src(['src/js/bootstrap/tooltip.js', 'src/js/**/*.js'])
         .pipe(concat('main.js'))
         .pipe(gulpif(env.p, uglify()))
-        .pipe(gulp.dest('build/js/'))
+        .pipe(gulp.dest('docs/js/'))
         .pipe(connect.reload());
 });
 
@@ -55,7 +55,7 @@ gulp.task('compass', function(){
 
         }))
         .pipe(gulpif(env.p, cssmin()))
-        .pipe(gulp.dest('build/css/'))
+        .pipe(gulp.dest('docs/css/'))
         .pipe(connect.reload());
 });
 
@@ -64,7 +64,7 @@ gulp.task('imagemin', function() {
   return gulp.src('src/img/**/*')
 // FIXME: fix the use of imagemin
 //    .pipe(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true }))
-    .pipe(gulp.dest('build/img'));
+    .pipe(gulp.dest('docs/img'));
 });
 
 // Call Watch
@@ -79,7 +79,7 @@ gulp.task('watch', function(){
 // Connect (Livereload)
 gulp.task('connect', function() {
     connect.server({
-        root: ['build/'],
+        root: ['docs/'],
         livereload: true,
         middleware: function(){
             return [
