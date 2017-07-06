@@ -3,16 +3,14 @@ $brand-primary: #396D5B;
 // Designer colors
 $link-color: #0070C0;
 $headings-color: #000000;
-$text-color: #767171;
+$text-color: darken(#767171, 20%);
 $menu-color: #595959;
 $section-heading-color: #F15B2A;
-
-
+$section-background-color: #f7f9fa;
 
 // Font
 @import "custom/font";
 $font-family-base: 'Avenir Next Regular';
-
 
 // Navbar
 $navbar-default-bg: #fff;

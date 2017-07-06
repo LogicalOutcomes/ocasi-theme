@@ -1724,7 +1724,7 @@ body {
   font-family: "Avenir Next Regular";
   font-size: 14px;
   line-height: 1.42857;
-  color: #767171;
+  color: #423f3f;
   background-color: #fff;
 }
 
@@ -4297,7 +4297,7 @@ select[multiple].input-lg,
   display: block;
   margin-top: 5px;
   margin-bottom: 10px;
-  color: #b5b2b2;
+  color: #837e7e;
 }
 
 @media (min-width: 768px) {
@@ -6651,7 +6651,7 @@ a.badge:hover, a.badge:focus {
 /* line 27, ../sass/bootstrap/_thumbnails.scss */
 .thumbnail .caption {
   padding: 9px;
-  color: #767171;
+  color: #423f3f;
 }
 
 /* line 34, ../sass/bootstrap/_thumbnails.scss */
@@ -8796,9 +8796,11 @@ button.close {
 .navbar {
   font-weight: bold;
   text-transform: uppercase;
+  border: 3px solid #eeeeee;
+  margin-bottom: 10px;
 }
 
-/* line 8, ../sass/custom/_navbar.scss */
+/* line 10, ../sass/custom/_navbar.scss */
 .navbar-brand img {
   height: 38px;
   margin-top: -9px;
@@ -8861,7 +8863,13 @@ button.close {
   text-decoration: underline;
 }
 
-/* line 1, ../sass/custom/_general.scss */
+@media (min-width: 1200px) {
+  /* line 3, ../sass/custom/_general.scss */
+  .container {
+    max-width: 970px;
+  }
+}
+/* line 8, ../sass/custom/_general.scss */
 .section-title {
   font-size: 42px;
   font-weight: bold;
@@ -8869,7 +8877,7 @@ button.close {
   margin-top: 30px;
 }
 
-/* line 8, ../sass/custom/_general.scss */
+/* line 15, ../sass/custom/_general.scss */
 .subsection-title {
   font-size: 24px;
   font-weight: bold;
@@ -8877,35 +8885,53 @@ button.close {
   margin-top: 30px;
 }
 
+/* line 22, ../sass/custom/_general.scss */
+.section-main {
+  background-color: #f7f9fa;
+  border-top: 1px solid #e3e5e6;
+  padding: 10px 0;
+}
+
 /* line 1, ../sass/custom/_main-title-box.scss */
 .main-title-box {
   margin: 0 0 30px 0;
   text-align: center;
 }
+/* line 5, ../sass/custom/_main-title-box.scss */
+.main-title-box_title {
+  font-weight: bold;
+}
 
 /* line 1, ../sass/custom/_main-section-box.scss */
 .main-section-box {
-  border-top: 5px solid #F15B2A;
-  margin: 15px;
-  padding: 0 20px;
+  background-color: #fff;
+  border-radius: 3px;
+  border: 1px solid #e3e5e6;
+  border-top: 3px solid #F15B2A;
+  margin: 15px 0;
+  padding: 5px 24px 35px 24px;
+  min-height: 250px;
+  position: relative;
 }
-/* line 6, ../sass/custom/_main-section-box.scss */
+/* line 11, ../sass/custom/_main-section-box.scss */
 .main-section-box_icon {
   height: 48px;
   float: left;
   margin-top: 22px;
 }
-/* line 12, ../sass/custom/_main-section-box.scss */
+/* line 17, ../sass/custom/_main-section-box.scss */
 .main-section-box_titles {
   margin: 0 0 20px 63px;
 }
-/* line 14, ../sass/custom/_main-section-box.scss */
+/* line 19, ../sass/custom/_main-section-box.scss */
 .main-section-box_titles_title {
   margin-bottom: 2px;
 }
-/* line 19, ../sass/custom/_main-section-box.scss */
+/* line 24, ../sass/custom/_main-section-box.scss */
 .main-section-box_link {
-  margin: 30px 0;
+  position: absolute;
+  left: 24px;
+  bottom: 10px;
 }
 
 /* line 1, ../sass/custom/_title-box.scss */

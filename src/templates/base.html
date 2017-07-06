@@ -39,14 +39,14 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
                         <li class="{% block nav_home_class %}{% endblock %}">
-                            <a href="/">
+                            <a href="./">
                                 Home
                                 {% block nav_home_sr_class %}{% endblock %}
                             </a>
                         </li>
                         <li><a href="#">Data Portal</a></li>
                         <li class="{% block nav_evaluation_class %}{% endblock %}">
-                            <a href="/evaluation">
+                            <a href="./evaluation">
                                 Evaluation
                                 {% block nav_evaluation_sr_class %}{% endblock %}
                             </a>
@@ -64,10 +64,11 @@
             <!-- /.container-fluid -->
         </nav>
 
-
+        {% block pre_content %}
         <div class="container">
             {% block content %}{% endblock %}
         </div>
+        {% endblock %}
 
 
         <footer class="footer">
@@ -101,7 +102,7 @@
 
                     </div>
                     <div class="col-md-6 footer_center">
-                        <p class="footer_center_label">Founded by:</p>
+                        <p class="footer_center_label">Funded by:</p>
                         <img src="img/ontario-logo-sm.png" alt="Ontario">
                         <p>The views expressed in this site are the views of the implementing partners, and may not necessarily reflect those of the Province</p>
                     </div>

@@ -1,7 +1,12 @@
 .main-section-box {
-    border-top: 5px solid $section-heading-color;
-    margin: 15px;
-    padding: 0 20px;
+    background-color: #fff;
+    border-radius: 3px;
+    border: 1px solid #e3e5e6;
+    border-top: 3px solid $section-heading-color;
+    margin: 15px 0;
+    padding: 5px 24px 35px 24px;
+    min-height: 250px;
+    position: relative;
 
     &_icon {
         height: 48px;
@@ -17,6 +22,8 @@
     }
 
     &_link {
-        margin: 30px 0;
+        position: absolute;
+        left: 24px;
+        bottom: 10px;
     }
 }
