@@ -5,17 +5,17 @@
     border-top: 3px solid $section-heading-color;
     margin: 15px 0;
     padding: 5px 24px 35px 24px;
-    min-height: 250px;
+    min-height: 215px;
     position: relative;
 
     &_icon {
         height: 48px;
         float: left;
-        margin-top: 22px;
+        margin-top: 10px;
     }
 
     &_titles {
-        margin: 0 0 20px 48+15px;
+        margin: 0 0 40px 48+15px;
         &_title {
             margin-bottom: 2px;
         }

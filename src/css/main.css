@@ -8910,18 +8910,18 @@ button.close {
   border-top: 3px solid #F15B2A;
   margin: 15px 0;
   padding: 5px 24px 35px 24px;
-  min-height: 250px;
+  min-height: 215px;
   position: relative;
 }
 /* line 11, ../sass/custom/_main-section-box.scss */
 .main-section-box_icon {
   height: 48px;
   float: left;
-  margin-top: 22px;
+  margin-top: 10px;
 }
 /* line 17, ../sass/custom/_main-section-box.scss */
 .main-section-box_titles {
-  margin: 0 0 20px 63px;
+  margin: 0 0 40px 63px;
 }
 /* line 19, ../sass/custom/_main-section-box.scss */
 .main-section-box_titles_title {
