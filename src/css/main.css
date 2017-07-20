@@ -8944,13 +8944,32 @@ button.close {
 }
 /* line 4, ../sass/custom/_title-box.scss */
 .title-box_icon {
-  float: left;
-  margin-right: 15px;
+  margin: auto;
+  text-align: center;
 }
-/* line 9, ../sass/custom/_title-box.scss */
+@media (min-width: 350px) {
+  /* line 4, ../sass/custom/_title-box.scss */
+  .title-box_icon {
+    margin-right: 15px;
+    float: left;
+  }
+}
+/* line 14, ../sass/custom/_title-box.scss */
 .title-box_title {
   color: #396D5B;
   margin-top: 15px;
+}
+@media (min-width: 768px) {
+  /* line 14, ../sass/custom/_title-box.scss */
+  .title-box_title {
+    margin-left: 143px;
+  }
+}
+@media (min-width: 768px) {
+  /* line 22, ../sass/custom/_title-box.scss */
+  .title-box_description {
+    margin-left: 143px;
+  }
 }
 
 /* line 2, ../sass/custom/_section-box.scss */

@@ -2,12 +2,26 @@
 	padding: 15px 0;
 
 	&_icon {
-		float: left;
-		margin-right: 15px;
+        margin: auto;
+        text-align: center;
+
+        @media (min-width: $screen-xxs-min){
+            margin-right: 15px;
+		    float: left;
+        }
 	}
 
 	&_title {
 		color: $brand-primary;
 		margin-top: 15px;
+        @media (min-width: $screen-sm-min){
+            margin-left: 128+15px;
+        }
 	}
+
+    &_description {      
+        @media (min-width: $screen-sm-min){
+            margin-left: 128+15px;
+        }
+    }
 }
