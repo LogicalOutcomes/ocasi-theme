@@ -8896,6 +8896,11 @@ button.close {
   padding: 10px 0;
 }
 
+/* line 28, ../sass/custom/_general.scss */
+.embed-responsive-full {
+  padding-bottom: 100%;
+}
+
 /* line 1, ../sass/custom/_main-title-box.scss */
 .main-title-box {
   margin: 0 0 30px 0;
