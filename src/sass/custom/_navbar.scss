@@ -3,6 +3,12 @@
     text-transform: uppercase;
     border: 3px solid $gray-lighter;
     margin-bottom: 10px;
+
+    .open {
+        a:focus {
+            background-color: $brand-primary-lighter !important;
+        }
+    }
 }
 
 

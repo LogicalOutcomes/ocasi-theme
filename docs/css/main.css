@@ -8799,8 +8799,12 @@ button.close {
   border: 3px solid #eeeeee;
   margin-bottom: 10px;
 }
+/* line 8, ../sass/custom/_navbar.scss */
+.navbar .open a:focus {
+  background-color: #e6f2ee !important;
+}
 
-/* line 10, ../sass/custom/_navbar.scss */
+/* line 16, ../sass/custom/_navbar.scss */
 .navbar-brand img {
   height: 38px;
   margin-top: -9px;
