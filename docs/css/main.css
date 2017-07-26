@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @font-face {
-  font-family: 'Avenir Next Regular';
-  src: url("../fonts/avenir-next-regular.ttf") format("truetype");
+  font-family: 'Segoe UI';
+  src: url("../fonts/SegoeUI-Regular-final.woff") format("woff2");
 }
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
@@ -1721,7 +1721,7 @@ html {
 
 /* line 27, ../sass/bootstrap/_scaffolding.scss */
 body {
-  font-family: "Avenir Next Regular";
+  font-family: "Segoe UI", wf_segoe-ui_normal, helvetica, arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857;
   color: #423f3f;
@@ -7881,7 +7881,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: "Avenir Next Regular";
+  font-family: "Segoe UI", wf_segoe-ui_normal, helvetica, arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -8019,7 +8019,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: "Avenir Next Regular";
+  font-family: "Segoe UI", wf_segoe-ui_normal, helvetica, arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
