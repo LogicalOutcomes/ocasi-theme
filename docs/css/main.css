@@ -8867,13 +8867,7 @@ button.close {
   text-decoration: underline;
 }
 
-@media (min-width: 1200px) {
-  /* line 3, ../sass/custom/_general.scss */
-  .container {
-    max-width: 970px;
-  }
-}
-/* line 8, ../sass/custom/_general.scss */
+/* line 2, ../sass/custom/_general.scss */
 .section-title {
   font-size: 42px;
   font-weight: bold;
@@ -8881,7 +8875,7 @@ button.close {
   margin-top: 30px;
 }
 
-/* line 15, ../sass/custom/_general.scss */
+/* line 9, ../sass/custom/_general.scss */
 .subsection-title {
   font-size: 24px;
   font-weight: bold;
@@ -8889,14 +8883,14 @@ button.close {
   margin-top: 30px;
 }
 
-/* line 22, ../sass/custom/_general.scss */
+/* line 16, ../sass/custom/_general.scss */
 .section-main {
   background-color: #f7f9fa;
   border-top: 1px solid #e3e5e6;
   padding: 10px 0;
 }
 
-/* line 28, ../sass/custom/_general.scss */
+/* line 22, ../sass/custom/_general.scss */
 .embed-responsive-full {
   padding-bottom: 100%;
 }
