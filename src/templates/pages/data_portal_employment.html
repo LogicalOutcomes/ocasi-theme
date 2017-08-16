@@ -1,0 +1,13 @@
+{% extends "pages/data_portal_base.html" %}
+
+{% block data_portal_content %}
+<ul class="nav nav-tabs">
+    <li role="presentation"><a href="./data_portal_income">Income</a></li>
+    <li role="presentation" class="active"><a href="./data_portal_employment">Employment</a></li>
+    <li role="presentation"><a href="./data_portal_other">Other</a></li>
+</ul>
+
+<div class="embed-responsive embed-responsive-16by9 embed-responsive-full">
+    <iframe class="embed-responsive-item" src="https://app.powerbi.com/view?r=eyJrIjoiZWYzMTk5ZDgtMjc4OS00NmYyLWFiMTUtYmE4NmJlYjE5MWFkIiwidCI6IjMzZWI5ODkzLWUyYWUtNGI2ZC1hNGJiLTYyYjliZDc3MzJkYiJ9" frameborder="0" allowFullScreen="true"></iframe>
+</div>
+{% endblock %}
