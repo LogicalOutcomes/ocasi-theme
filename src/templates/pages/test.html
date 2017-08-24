@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+<h1>This is a test page for theme components</h1>
+
+<div id="searchbar" class="row">
+    <div class="col-sm-8 col-sm-offset-2">
+        <div class="input-group">
+            <input type="text" class="form-control" value="manager" name="q" accesskey="q">
+            <span class="input-group-btn">
+            <button class="btn btn-primary" type="submit">
+                Search <span class="glyphicon glyphicon-search"></span>
+            </button>
+            </span>
+        </div>
+    </div>
+</div>
+
+<hr>
+{% endblock %}
