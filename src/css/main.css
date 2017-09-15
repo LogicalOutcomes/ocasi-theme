@@ -8929,8 +8929,9 @@ button.close {
 /* line 19, ../sass/custom/_main-section-box.scss */
 .main-section-box_titles_title {
   margin-bottom: 2px;
+  font-size: 24px;
 }
-/* line 24, ../sass/custom/_main-section-box.scss */
+/* line 25, ../sass/custom/_main-section-box.scss */
 .main-section-box_link {
   position: absolute;
   left: 24px;
