@@ -9001,3 +9001,8 @@ button.close {
 .shortcut-box_content_title {
   font-size: 16px;
 }
+
+/* line 1, ../sass/custom/_aristotle.scss */
+#infobox {
+  text-transform: none;
+}
