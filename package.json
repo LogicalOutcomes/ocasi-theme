@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "description": "A simple boilerplate to create projects with jade, bootstrap-sass and gulp.",
   "main": "gulpfile.js",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "connect-modrewrite": "^0.7.4",
     "gulp": "^3.9.1",
