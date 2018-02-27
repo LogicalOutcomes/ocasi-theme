@@ -4,6 +4,10 @@
     font-weight: bold;
     margin-bottom: 20px;
     margin-top: 30px;
+
+    &__small {
+        font-size: 28px;
+    }
 }
 
 .subsection-title {
@@ -11,6 +15,10 @@
     font-weight: bold;
     margin-bottom: 20px;
     margin-top: 30px;
+
+    &__small {
+        font-size: 16px;
+    }
 }
 
 .section-main {

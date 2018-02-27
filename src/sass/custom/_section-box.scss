@@ -7,5 +7,11 @@
 
 	&_content {
 		margin-left: 48+15px;
+
+        &_title {
+            &__small {
+                font-size: 18px;
+            }
+        }
 	}
 }

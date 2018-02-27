@@ -6050,7 +6050,7 @@ tbody.collapse.in {
 }
 /* line 403, ../sass/bootstrap/_navbar.scss */
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
-  color: #3f3f3f;
+  color: #404040;
   background-color: transparent;
 }
 /* line 410, ../sass/bootstrap/_navbar.scss */
@@ -8874,23 +8874,31 @@ button.close {
   margin-bottom: 20px;
   margin-top: 30px;
 }
+/* line 8, ../sass/custom/_general.scss */
+.section-title__small {
+  font-size: 28px;
+}
 
-/* line 9, ../sass/custom/_general.scss */
+/* line 13, ../sass/custom/_general.scss */
 .subsection-title {
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 20px;
   margin-top: 30px;
 }
+/* line 19, ../sass/custom/_general.scss */
+.subsection-title__small {
+  font-size: 16px;
+}
 
-/* line 16, ../sass/custom/_general.scss */
+/* line 24, ../sass/custom/_general.scss */
 .section-main {
   background-color: #f7f9fa;
   border-top: 1px solid #e3e5e6;
   padding: 10px 0;
 }
 
-/* line 22, ../sass/custom/_general.scss */
+/* line 30, ../sass/custom/_general.scss */
 .embed-responsive-full {
   padding-bottom: 150%;
 }
@@ -8931,7 +8939,11 @@ button.close {
   margin-bottom: 2px;
   font-size: 24px;
 }
-/* line 25, ../sass/custom/_main-section-box.scss */
+/* line 22, ../sass/custom/_main-section-box.scss */
+.main-section-box_titles_title__small {
+  font-size: 16px;
+}
+/* line 28, ../sass/custom/_main-section-box.scss */
 .main-section-box_link {
   position: absolute;
   left: 24px;
@@ -8981,6 +8993,10 @@ button.close {
 /* line 8, ../sass/custom/_section-box.scss */
 .section-box_content {
   margin-left: 63px;
+}
+/* line 12, ../sass/custom/_section-box.scss */
+.section-box_content_title__small {
+  font-size: 18px;
 }
 
 /* line 1, ../sass/custom/_shortcut-box.scss */
